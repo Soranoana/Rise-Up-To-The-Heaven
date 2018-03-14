@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 0b5aa5a5bb9ece043959796dcc376a51
+timeCreated: 1479287615
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Lamp
+    100004: obj1.013
+    100006: obj2.003
+    100008: obj3.002
+    100010: obj4.001
+    100012: obj5.001
+    100014: otera_mqo
+    100016: otera_mqo.001
+    100018: otera_mqo.002
+    100020: otera_mqo.003
+    100022: tera2_mqo
+    100024: tera2_mqo.001
+    100026: tera2_mqo.002
+    100028: tera2_mqo.003
+    100030: tera2_mqo.004
+    100032: tera2_mqo.005
+    100034: tera2_mqo.006
+    100036: tera2_mqo.007
+    100038: //RootNode
+    100040: torii_mqo
+    100042: "\u30A4\u30AB_mqo"
+    400000: Camera
+    400002: Lamp
+    400004: obj1.013
+    400006: obj2.003
+    400008: obj3.002
+    400010: obj4.001
+    400012: obj5.001
+    400014: otera_mqo
+    400016: otera_mqo.001
+    400018: otera_mqo.002
+    400020: otera_mqo.003
+    400022: tera2_mqo
+    400024: tera2_mqo.001
+    400026: tera2_mqo.002
+    400028: tera2_mqo.003
+    400030: tera2_mqo.004
+    400032: tera2_mqo.005
+    400034: tera2_mqo.006
+    400036: tera2_mqo.007
+    400038: //RootNode
+    400040: torii_mqo
+    400042: "\u30A4\u30AB_mqo"
+    2300000: obj1.013
+    2300002: obj2.003
+    2300004: obj3.002
+    2300006: obj4.001
+    2300008: obj5.001
+    3300000: obj1.013
+    3300002: obj2.003
+    3300004: obj3.002
+    3300006: obj4.001
+    3300008: obj5.001
+    4300000: obj5.001
+    4300002: obj4.001
+    4300004: obj3.002
+    4300006: obj2.003
+    4300008: obj1.013
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

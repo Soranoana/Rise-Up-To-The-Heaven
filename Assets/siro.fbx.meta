@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 7e716acd622cfe24890868b9a7c7f651
+timeCreated: 1484116896
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: door1.003
+    100004: door2.003
+    100006: hidari.003
+    100008: korosiamu.003
+    100010: Lamp
+    100012: leghtdoor.003
+    100014: mae.003
+    100016: migi.003
+    100018: miti.003
+    100020: obj1.001
+    100022: obj1.004
+    100024: obj2.002
+    100026: obj3
+    100028: obj3.003
+    100030: obj4.001
+    100032: obj5.003
+    100034: obj6.003
+    100036: rightdoor.003
+    100038: //RootNode
+    100040: siro22_mqo
+    100042: siro22_mqo.001
+    100044: siro22_mqo.002
+    100046: siro22_mqo.003
+    100048: usirotou.003
+    100050: yoko.003
+    100052: yoko2.003
+    100054: "\u30A4\u30AB_mqo"
+    100056: "\u4E2D\u592E.003"
+    400000: Camera
+    400002: door1.003
+    400004: door2.003
+    400006: hidari.003
+    400008: korosiamu.003
+    400010: Lamp
+    400012: leghtdoor.003
+    400014: mae.003
+    400016: migi.003
+    400018: miti.003
+    400020: obj1.001
+    400022: obj1.004
+    400024: obj2.002
+    400026: obj3
+    400028: obj3.003
+    400030: obj4.001
+    400032: obj5.003
+    400034: obj6.003
+    400036: rightdoor.003
+    400038: //RootNode
+    400040: siro22_mqo
+    400042: siro22_mqo.001
+    400044: siro22_mqo.002
+    400046: siro22_mqo.003
+    400048: usirotou.003
+    400050: yoko.003
+    400052: yoko2.003
+    400054: "\u30A4\u30AB_mqo"
+    400056: "\u4E2D\u592E.003"
+    2300000: door1.003
+    2300002: door2.003
+    2300004: hidari.003
+    2300006: korosiamu.003
+    2300008: leghtdoor.003
+    2300010: mae.003
+    2300012: migi.003
+    2300014: miti.003
+    2300016: obj1.001
+    2300018: obj1.004
+    2300020: obj2.002
+    2300022: obj3
+    2300024: obj3.003
+    2300026: obj4.001
+    2300028: obj5.003
+    2300030: obj6.003
+    2300032: rightdoor.003
+    2300034: usirotou.003
+    2300036: yoko.003
+    2300038: yoko2.003
+    2300040: "\u4E2D\u592E.003"
+    3300000: door1.003
+    3300002: door2.003
+    3300004: hidari.003
+    3300006: korosiamu.003
+    3300008: leghtdoor.003
+    3300010: mae.003
+    3300012: migi.003
+    3300014: miti.003
+    3300016: obj1.001
+    3300018: obj1.004
+    3300020: obj2.002
+    3300022: obj3
+    3300024: obj3.003
+    3300026: obj4.001
+    3300028: obj5.003
+    3300030: obj6.003
+    3300032: rightdoor.003
+    3300034: usirotou.003
+    3300036: yoko.003
+    3300038: yoko2.003
+    3300040: "\u4E2D\u592E.003"
+    4300000: obj4.001
+    4300002: obj2.002
+    4300004: leghtdoor.003
+    4300006: rightdoor.003
+    4300008: door2.003
+    4300010: door1.003
+    4300012: korosiamu.003
+    4300014: obj6.003
+    4300016: miti.003
+    4300018: obj5.003
+    4300020: usirotou.003
+    4300022: hidari.003
+    4300024: yoko2.003
+    4300026: migi.003
+    4300028: "\u4E2D\u592E.003"
+    4300030: yoko.003
+    4300032: mae.003
+    4300034: obj3.003
+    4300036: obj1.004
+    4300038: obj3
+    4300040: obj1.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,108 @@
+fileFormatVersion: 2
+guid: 96b74ad32cfdc2b498fbe6f429118729
+timeCreated: 1479283275
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Lamp
+    100004: obj1.012
+    100006: otera_mqo
+    100008: otera_mqo.001
+    100010: otera_mqo.002
+    100012: otera_mqo.003
+    100014: //RootNode
+    100016: tera2_mqo
+    100018: tera2_mqo.001
+    100020: tera2_mqo.002
+    100022: tera2_mqo.003
+    100024: tera2_mqo.004
+    100026: tera2_mqo.005
+    100028: tera2_mqo.006
+    100030: tera2_mqo.007
+    100032: "\u30A4\u30AB_mqo"
+    400000: Camera
+    400002: Lamp
+    400004: obj1.012
+    400006: otera_mqo
+    400008: otera_mqo.001
+    400010: otera_mqo.002
+    400012: otera_mqo.003
+    400014: //RootNode
+    400016: tera2_mqo
+    400018: tera2_mqo.001
+    400020: tera2_mqo.002
+    400022: tera2_mqo.003
+    400024: tera2_mqo.004
+    400026: tera2_mqo.005
+    400028: tera2_mqo.006
+    400030: tera2_mqo.007
+    400032: "\u30A4\u30AB_mqo"
+    2300000: obj1.012
+    3300000: obj1.012
+    4300000: obj1.012
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

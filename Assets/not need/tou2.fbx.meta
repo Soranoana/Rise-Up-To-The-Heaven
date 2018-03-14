@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: d593488178a200248b4f8d25adf15f42
+timeCreated: 1484259950
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: gate1
+    100004: hasira2
+    100006: hole_wall
+    100008: Lamp
+    100010: light_sankaku_sita
+    100012: light_sankaku_ue
+    100014: mahouzin
+    100016: maku
+    100018: naka1
+    100020: rasen1
+    100022: saka
+    100024: sekihi
+    100026: tennbann2
+    100028: tennbann_sita5
+    100030: tennbann_ue5
+    100032: //RootNode
+    100034: tou2_mqo
+    400000: Camera
+    400002: gate1
+    400004: hasira2
+    400006: hole_wall
+    400008: Lamp
+    400010: light_sankaku_sita
+    400012: light_sankaku_ue
+    400014: mahouzin
+    400016: maku
+    400018: naka1
+    400020: rasen1
+    400022: saka
+    400024: sekihi
+    400026: tennbann2
+    400028: tennbann_sita5
+    400030: tennbann_ue5
+    400032: //RootNode
+    400034: tou2_mqo
+    2300000: gate1
+    2300002: hasira2
+    2300004: hole_wall
+    2300006: light_sankaku_sita
+    2300008: light_sankaku_ue
+    2300010: mahouzin
+    2300012: maku
+    2300014: naka1
+    2300016: rasen1
+    2300018: saka
+    2300020: sekihi
+    2300022: tennbann2
+    2300024: tennbann_sita5
+    2300026: tennbann_ue5
+    3300000: gate1
+    3300002: hasira2
+    3300004: hole_wall
+    3300006: light_sankaku_sita
+    3300008: light_sankaku_ue
+    3300010: mahouzin
+    3300012: maku
+    3300014: naka1
+    3300016: rasen1
+    3300018: saka
+    3300020: sekihi
+    3300022: tennbann2
+    3300024: tennbann_sita5
+    3300026: tennbann_ue5
+    4300000: sekihi
+    4300002: saka
+    4300004: mahouzin
+    4300006: light_sankaku_sita
+    4300008: light_sankaku_ue
+    4300010: hole_wall
+    4300012: gate1
+    4300014: maku
+    4300016: tennbann_ue5
+    4300018: tennbann_sita5
+    4300020: tennbann2
+    4300022: hasira2
+    4300024: naka1
+    4300026: rasen1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

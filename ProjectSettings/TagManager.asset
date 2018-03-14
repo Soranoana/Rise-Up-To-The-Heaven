@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Fire
+  - Wall
+  - Attack
+  - EAttack
+  - kaidan
+  - Warp
+  - Damage
+  - Boss
+  - Ground
+  - Floor1
+  - Floor2
+  - Floor3
+  - Floor4
+  - Open
+  - Floor0
+  - Enemy
+  - warp
+  - GoTo1
+  - GoTo2
+  - GoTo3
+  - GoTo4
+  - GoTo5
+  - GoTo6
+  - Clear
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - PlayerAttack
+  - EnemyAttack
+  - kaidan
+  - Ground
+  - BossBody
+  - benri_NoConvex
+  - benri_NoCol
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1093696345
+    locked: 0
+  - name: Foreground
+    uniqueID: 1859086223
+    locked: 0
+  - name: Characters
+    uniqueID: 3940858523
+    locked: 0
+  - name: UI
+    uniqueID: 771169021
+    locked: 0

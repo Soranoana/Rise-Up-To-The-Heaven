@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: 013a0da0e17c2f348838d181644dca2e
+timeCreated: 1481091879
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: ashi
+    100004: ashi.R
+    100006: ashi.R_end
+    100008: ashi_end
+    100010: Bone
+    100012: Camera
+    100014: hara
+    100016: head
+    100018: head_end
+    100020: kata
+    100022: kata.R
+    100024: kosi
+    100026: Lamp
+    100028: momo
+    100030: momo.R
+    100032: mune
+    100034: neck
+    100036: Root
+    100038: sune
+    100040: sune.R
+    100042: sune.R_end
+    100044: sune_end
+    100046: syaka7_mqo
+    100048: te
+    100050: te.R
+    100052: te.R_end
+    100054: te_end
+    100056: ude
+    100058: ude.R
+    100060: ude2
+    100062: ude2.R
+    100064: //RootNode
+    100066: "\u982D.001"
+    400000: Armature
+    400002: ashi
+    400004: ashi.R
+    400006: ashi.R_end
+    400008: ashi_end
+    400010: Bone
+    400012: Camera
+    400014: hara
+    400016: head
+    400018: head_end
+    400020: kata
+    400022: kata.R
+    400024: kosi
+    400026: Lamp
+    400028: momo
+    400030: momo.R
+    400032: mune
+    400034: neck
+    400036: Root
+    400038: sune
+    400040: sune.R
+    400042: sune.R_end
+    400044: sune_end
+    400046: syaka7_mqo
+    400048: te
+    400050: te.R
+    400052: te.R_end
+    400054: te_end
+    400056: ude
+    400058: ude.R
+    400060: ude2
+    400062: ude2.R
+    400064: //RootNode
+    400066: "\u982D.001"
+    4300000: "\u982D.001"
+    7400000: Armature|beam
+    7400002: Armature|death
+    7400004: Armature|humikomi
+    7400006: Armature|walk
+    9500000: //RootNode
+    13700000: "\u982D.001"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|beam
+      takeName: Armature|beam
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/ashi
+        weight: 1
+      - path: Armature/Root/ashi/ashi_end
+        weight: 1
+      - path: Armature/Root/ashi.R
+        weight: 1
+      - path: Armature/Root/ashi.R/ashi.R_end
+        weight: 1
+      - path: Armature/Root/Bone
+        weight: 1
+      - path: Armature/Root/Bone/hara
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te/te_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R/te.R_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head/head_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune/sune_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R/sune.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: syaka7_mqo
+        weight: 1
+      - path: "\u982D.001"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|death
+      takeName: Armature|death
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/ashi
+        weight: 1
+      - path: Armature/Root/ashi/ashi_end
+        weight: 1
+      - path: Armature/Root/ashi.R
+        weight: 1
+      - path: Armature/Root/ashi.R/ashi.R_end
+        weight: 1
+      - path: Armature/Root/Bone
+        weight: 1
+      - path: Armature/Root/Bone/hara
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te/te_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R/te.R_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head/head_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune/sune_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R/sune.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: syaka7_mqo
+        weight: 1
+      - path: "\u982D.001"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|humikomi
+      takeName: Armature|humikomi
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/ashi
+        weight: 1
+      - path: Armature/Root/ashi/ashi_end
+        weight: 1
+      - path: Armature/Root/ashi.R
+        weight: 1
+      - path: Armature/Root/ashi.R/ashi.R_end
+        weight: 1
+      - path: Armature/Root/Bone
+        weight: 1
+      - path: Armature/Root/Bone/hara
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te/te_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R/te.R_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head/head_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune/sune_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R/sune.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: syaka7_mqo
+        weight: 1
+      - path: "\u982D.001"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|walk
+      takeName: Armature|walk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/ashi
+        weight: 1
+      - path: Armature/Root/ashi/ashi_end
+        weight: 1
+      - path: Armature/Root/ashi.R
+        weight: 1
+      - path: Armature/Root/ashi.R/ashi.R_end
+        weight: 1
+      - path: Armature/Root/Bone
+        weight: 1
+      - path: Armature/Root/Bone/hara
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata/ude/ude2/te/te_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/kata.R/ude.R/ude2.R/te.R/te.R_end
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head
+        weight: 1
+      - path: Armature/Root/Bone/hara/mune/neck/head/head_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo/sune/sune_end
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R
+        weight: 1
+      - path: Armature/Root/Bone/kosi/momo.R/sune.R/sune.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: syaka7_mqo
+        weight: 1
+      - path: "\u982D.001"
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

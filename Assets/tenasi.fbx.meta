@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: e61b1e4bb751a4e4d98f31a1ab3c96d1
+timeCreated: 1465362126
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: huku
+    100004: Lamp
+    100006: obj1
+    100008: obj1.001
+    100010: obj2.001
+    100012: obj20
+    100014: obj3
+    100016: obj3.001
+    100018: //RootNode
+    100020: tenasi_mqo
+    100022: zako2_mqo
+    100024: "\u4F531"
+    100026: "\u670D"
+    100028: "\u8033"
+    100030: "\u982D"
+    100032: "\u982D\uFF12"
+    100034: "\u9854"
+    400000: Camera
+    400002: huku
+    400004: Lamp
+    400006: obj1
+    400008: obj1.001
+    400010: obj2.001
+    400012: obj20
+    400014: obj3
+    400016: obj3.001
+    400018: //RootNode
+    400020: tenasi_mqo
+    400022: zako2_mqo
+    400024: "\u4F531"
+    400026: "\u670D"
+    400028: "\u8033"
+    400030: "\u982D"
+    400032: "\u982D\uFF12"
+    400034: "\u9854"
+    2300000: huku
+    2300002: obj1
+    2300004: obj1.001
+    2300006: obj2.001
+    2300008: obj20
+    2300010: obj3
+    2300012: obj3.001
+    2300014: "\u4F531"
+    2300016: "\u670D"
+    2300018: "\u8033"
+    2300020: "\u982D"
+    2300022: "\u982D\uFF12"
+    2300024: "\u9854"
+    3300000: huku
+    3300002: obj1
+    3300004: obj1.001
+    3300006: obj2.001
+    3300008: obj20
+    3300010: obj3
+    3300012: obj3.001
+    3300014: "\u4F531"
+    3300016: "\u670D"
+    3300018: "\u8033"
+    3300020: "\u982D"
+    3300022: "\u982D\uFF12"
+    3300024: "\u9854"
+    4300000: obj20
+    4300002: obj3.001
+    4300004: "\u670D"
+    4300006: huku
+    4300008: "\u4F531"
+    4300010: "\u982D\uFF12"
+    4300012: "\u982D"
+    4300014: "\u8033"
+    4300016: obj2.001
+    4300018: "\u9854"
+    4300020: obj1.001
+    4300022: obj3
+    4300024: obj1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

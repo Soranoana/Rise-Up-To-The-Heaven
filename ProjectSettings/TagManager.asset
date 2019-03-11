@@ -4,30 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fire
-  - Wall
+  - PlayerFootRayPosition
+  - DamegeArea
   - Attack
-  - EAttack
-  - kaidan
-  - Warp
   - Damage
   - Boss
-  - Ground
-  - Floor1
-  - Floor2
-  - Floor3
-  - Floor4
-  - Open
-  - Floor0
   - Enemy
-  - warp
-  - GoTo1
-  - GoTo2
-  - GoTo3
-  - GoTo4
-  - GoTo5
-  - GoTo6
-  - Clear
+  - Ground
+  - Floor0
+  - EAttack
+  - DropItem
   layers:
   - Default
   - TransparentFX
@@ -45,8 +31,8 @@ TagManager:
   - BossBody
   - benri_NoConvex
   - benri_NoCol
-  - 
-  - 
+  - climbable
+  - DamegeArea
   - 
   - 
   - 

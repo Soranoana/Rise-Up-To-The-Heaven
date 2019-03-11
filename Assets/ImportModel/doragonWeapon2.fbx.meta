@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 995eb5455eac93841bb7e3a1825ae8f5
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: agito
+    100002: body1
+    100004: //RootNode
+    100006: eye1
+    100008: haien2
+    100010: haienFilter
+    100012: head
+    100014: hireBody
+    100016: hireHead
+    100018: hireNeck
+    100020: neck1
+    100022: toothUnder
+    100024: toothUpper
+    400000: agito
+    400002: body1
+    400004: //RootNode
+    400006: eye1
+    400008: haien2
+    400010: haienFilter
+    400012: head
+    400014: hireBody
+    400016: hireHead
+    400018: hireNeck
+    400020: neck1
+    400022: toothUnder
+    400024: toothUpper
+    2100000: body1 phantom
+    2100002: default.001
+    2100004: hire
+    2100006: default
+    2100008: eyes1
+    2100010: mouse inner
+    2100012: body2 skin
+    2300000: agito
+    2300002: body1
+    2300004: eye1
+    2300006: haien2
+    2300008: haienFilter
+    2300010: head
+    2300012: hireBody
+    2300014: hireHead
+    2300016: hireNeck
+    2300018: neck1
+    2300020: toothUnder
+    2300022: toothUpper
+    3300000: agito
+    3300002: body1
+    3300004: eye1
+    3300006: haien2
+    3300008: haienFilter
+    3300010: head
+    3300012: hireBody
+    3300014: hireHead
+    3300016: hireNeck
+    3300018: neck1
+    3300020: toothUnder
+    3300022: toothUpper
+    4300000: haienFilter
+    4300002: haien2
+    4300004: toothUpper
+    4300006: hireHead
+    4300008: hireNeck
+    4300010: hireBody
+    4300012: toothUnder
+    4300014: eye1
+    4300016: agito
+    4300018: head
+    4300020: neck1
+    4300022: body1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: b04fd911553f1b84d8ca969e4cb9b61a
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bell
+    100002: bell_nawa1
+    100004: Camera
+    100006: Cube
+    100008: gate
+    100010: hammer
+    100012: hammer_nawa
+    100014: //RootNode
+    100016: kawara
+    100018: Lamp
+    100020: porl
+    100022: "\u304B\u306D_mqo"
+    100024: "\u67F5"
+    100026: "\u968E\u6BB5"
+    400000: bell
+    400002: bell_nawa1
+    400004: Camera
+    400006: Cube
+    400008: gate
+    400010: hammer
+    400012: hammer_nawa
+    400014: //RootNode
+    400016: kawara
+    400018: Lamp
+    400020: porl
+    400022: "\u304B\u306D_mqo"
+    400024: "\u67F5"
+    400026: "\u968E\u6BB5"
+    2000000: Camera
+    2100000: kawara_blue
+    2100002: gakubuti_yellow
+    2100004: pool_gate_wood
+    2100006: nakami_brown
+    2100008: Material
+    2300000: bell
+    2300002: bell_nawa1
+    2300004: Cube
+    2300006: gate
+    2300008: hammer
+    2300010: hammer_nawa
+    2300012: kawara
+    2300014: porl
+    2300016: "\u67F5"
+    2300018: "\u968E\u6BB5"
+    3300000: bell
+    3300002: bell_nawa1
+    3300004: Cube
+    3300006: gate
+    3300008: hammer
+    3300010: hammer_nawa
+    3300012: kawara
+    3300014: porl
+    3300016: "\u67F5"
+    3300018: "\u968E\u6BB5"
+    4300000: bell_nawa1
+    4300002: hammer_nawa
+    4300004: kawara
+    4300006: gate
+    4300008: "\u67F5"
+    4300010: hammer
+    4300012: bell
+    4300014: "\u968E\u6BB5"
+    4300016: porl
+    4300018: Cube
+    10800000: Lamp
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

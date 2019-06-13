@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.riseuptotheheaven.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "H:\\DevelopmentProjects\\Rise-Up-To-The-Heaven\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "RiseUpToTheHeaven [Testing]"
+        }
+      }
+    }
+  ]
+}

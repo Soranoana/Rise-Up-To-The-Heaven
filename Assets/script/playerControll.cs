@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
-
 public struct ItemAndWeaponSet {
     public int ItemNumber;     //アイテムの番号（検索用など）
     public string ItemName;    //アイテムの名前

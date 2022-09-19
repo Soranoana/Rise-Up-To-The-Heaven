@@ -197,14 +197,14 @@ public class playerControll : MonoBehaviour {
 			isStaminaUse = false;
 			runSpeed = 1;
 		}
-		if (onGround.IsGround()) {
+		if (onGround.IsGround) {
 			rigid.velocity = Vector3.zero;
 			if (Input.GetKey(KeyCode.W)) {
 				walkVector = transform.TransformVector(new Vector3(0, 0, 1) * walkSpeed * runSpeed);
 				walkVector2 = new Vector2(walkVector.x, walkVector.z);
 				//不自然に上に行かないようにする
 				if (!canMoveToUp) {
-					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector().y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
+					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector.y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
 				}
 				rigid.velocity += walkVector;
 				inputed = true;
@@ -214,7 +214,7 @@ public class playerControll : MonoBehaviour {
 				walkVector2 = new Vector2(walkVector.x, walkVector.z);
 				//不自然に上に行かないようにする
 				if (!canMoveToUp) {
-					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector().y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
+					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector.y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
 				}
 				rigid.velocity += walkVector;
 				inputed = true;
@@ -224,7 +224,7 @@ public class playerControll : MonoBehaviour {
 				walkVector2 = new Vector2(walkVector.x, walkVector.z);
 				//不自然に上に行かないようにする
 				if (!canMoveToUp) {
-					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector().y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
+					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector.y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
 				}
 				rigid.velocity += walkVector;
 				inputed = true;
@@ -234,7 +234,7 @@ public class playerControll : MonoBehaviour {
 				walkVector2 = new Vector2(walkVector.x, walkVector.z);
 				//不自然に上に行かないようにする
 				if (!canMoveToUp) {
-					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector().y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
+					walkVector = new Vector3(walkVector.x, onGround.RayObjectHorizontalVector.y * walkVector2.magnitude / walkVector2.normalized.magnitude, walkVector.z);
 				}
 				rigid.velocity += walkVector;
 				inputed = true;

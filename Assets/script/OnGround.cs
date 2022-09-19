@@ -27,8 +27,9 @@ public class OnGround : MonoBehaviour {
 		//rayPositionObjsがすべてセットされているか確認する
 		for (int i = 0; i < rayPositionObjsNum; i++) {
 			if (rayPositionObjs[i] == null) {
-				Debug.LogError("rayPositionObjsがnullです。: rayPositionObjs[" + i + "]");
-				//TODO warningにして、自動で初期化する。
+				Debug.LogWarning("rayPositionObjsがnullです。: rayPositionObjs[" + i + "]\n自動で初期化します。");
+				//自動で初期化する。
+				InitializeRayPositionObjs(i);
 			}
 		}
 	}
@@ -36,8 +37,33 @@ public class OnGround : MonoBehaviour {
 	void Update() {
 		//ステータス更新
 		UpdateGroundStatus();
+	}
 
-		Debug.Log("IsGround : " + IsGround);
+	private void InitializeRayPositionObjs(int objIndex) {
+		string objName;
+		switch (objIndex) {
+			case 0:
+				objName = "RayPositionCenter";
+				break;
+			case 1:
+				objName = "RayPositionFront";
+				break;
+			case 2:
+				objName = "RayPositionLeft";
+				break;
+			case 3:
+				objName = "RayPositionBack";
+				break;
+			case 4:
+				objName = "RayPositionRight";
+				break;
+			default:
+				Debug.LogError("不正な値でrayPositionObjsを初期化しようとしています。処理を中断します。");
+				return;
+		}
+		rayPositionObjs[objIndex] = transform.Find(objName).gameObject;
+		Debug.LogWarning("rayPositionObjs[" + objIndex + "]を初期化しました。\nオブジェクト名: " + objName);
+		return;
 	}
 
 	//接地しているか否かの状態を更新する
@@ -55,6 +81,7 @@ public class OnGround : MonoBehaviour {
 			//レイオブジェクトの設定と、発射位置の初期化。発射位置はレイのポジションの - (0,rayRange,0)
 			ray[i] = new Ray(rayPositionObjs[i].transform.position, rayPositionObjs[i].transform.position - transform.up * rayRange);
 
+			//レイ発射
 			if (Physics.Linecast(ray[i].origin, ray[i].direction, out RaycastHit hit)) {
 				//接地面のベクトル方向を取得
 				LocalGround(ray[i], hit);

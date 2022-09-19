@@ -51,13 +51,6 @@ public class playerControll : MonoBehaviour {
     private Rigidbody rigid;
     public float GravityForce;
     public float runSpeed;
-    //IsGround用
-    //　レイを飛ばす位置
-    [SerializeField]
-    private GameObject[] rayPosition = new GameObject[8];
-    //　レイの距離
-    [SerializeField]
-    private float rayRange = 1f;
     //CanvasUI用
     //[SerializeField]
     private GameObject CanvasUI;
@@ -82,19 +75,6 @@ public class playerControll : MonoBehaviour {
     public string filePath;
     private StreamReader sr;
     private int itemKindNum;
-    //RayCast用
-    //あたったものの情報が入るRaycastHitを準備
-    RaycastHit hit;
-    //新しいレイを作成する（発射位置と方向をあらわす情報）
-    Ray[] ray = new Ray[8];
-    Vector3 rayObjectHorizontalVector;
-    int layerMask = 1 << 12 | 1 << 16;
-    //反射ベクトル（反射方向を示すベクトル）
-    Vector3 reflect_direction;
-    //レイがあたった当たり判定オブジェクトの面の法線
-    Vector3 normal;
-    //レイの方向ベクトル
-    Vector3 direction;
     //スタミナ回復量
     private int staminaRegain = 1;
     //スタミナを消費している
@@ -108,8 +88,6 @@ public class playerControll : MonoBehaviour {
 
     //重力を適用する
     public bool useGravity;
-    //地面接地判定を適用する
-    public bool useGrounding;
     //上へ移動を可能する
     public bool canMoveToUp;
 
@@ -139,7 +117,6 @@ public class playerControll : MonoBehaviour {
     void Start() {
         rigid = this.gameObject.GetComponent<Rigidbody>();
         GravityForce = 98f;
-        rayPosition = GameObject.FindGameObjectsWithTag("PlayerFootRayPosition");
         CanvasUI = GameObject.Find("CanvasUI");
         //カーソル非表示
         Cursor.visible = false;
@@ -297,21 +274,6 @@ public class playerControll : MonoBehaviour {
             }
         }
         gameObject.transform.Rotate(0, Input.GetAxis("Mouse X") * 3f, 0, Space.World);     //マウス入力x座標でワールドy座標回転
-    }
-
-    //接地しているか否か
-    private bool IsGround() {
-        if (!useGrounding)
-            return true;
-
-        for (int i = 0; rayPosition.Length > i; i++) {
-            ray[i] = new Ray(rayPosition[i].transform.position, rayPosition[i].transform.position - transform.up * rayRange);
-            if (Physics.Linecast(rayPosition[i].transform.position, rayPosition[i].transform.position - transform.up * rayRange, out hit, layerMask)) {
-                rayObjectHorizontalVector = localGround(ray[i]);
-                return true;
-            }
-        }
-        return false;
     }
 
     public void OnTriggerEnter(Collider other) {

@@ -399,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37939224}
   m_Layer: 0
-  m_Name: RayPosition
+  m_Name: RayPositionCenter
   m_TagString: PlayerFootRayPosition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1983,7 +1983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468139442}
   m_Layer: 0
-  m_Name: RayPosition (2)
+  m_Name: RayPositionBack
   m_TagString: PlayerFootRayPosition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2698,6 +2698,7 @@ GameObject:
   - component: {fileID: 900090178}
   - component: {fileID: 900090177}
   - component: {fileID: 900090175}
+  - component: {fileID: 900090176}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -2723,6 +2724,26 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &900090176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900090174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8494a1760e3707744b162fc101f4ed1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayPositionObjs:
+  - {fileID: 37939223}
+  - {fileID: 2064829389}
+  - {fileID: 2088407749}
+  - {fileID: 468139441}
+  - {fileID: 2118188333}
+  rayRange: 1
+  useGrounding: 1
 --- !u!136 &900090177
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2753,16 +2774,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GravityForce: 0
   runSpeed: 0
-  rayPosition:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  rayRange: 1
   texture:
   - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
   - {fileID: 2800000, guid: cc9f333872a11b7489faeccb88e56fed, type: 3}
@@ -2784,8 +2795,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
   filePath: 
   useGravity: 1
-  useGrounding: 1
   canMoveToUp: 1
+  onGround: {fileID: 900090176}
 --- !u!54 &900090179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6189,7 +6200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2064829390}
   m_Layer: 0
-  m_Name: RayPosition (1)
+  m_Name: RayPositionFront
   m_TagString: PlayerFootRayPosition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6221,7 +6232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2088407750}
   m_Layer: 0
-  m_Name: RayPosition (3)
+  m_Name: RayPositionLeft
   m_TagString: PlayerFootRayPosition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6532,7 +6543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118188334}
   m_Layer: 0
-  m_Name: RayPosition (4)
+  m_Name: RayPositionRight
   m_TagString: PlayerFootRayPosition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

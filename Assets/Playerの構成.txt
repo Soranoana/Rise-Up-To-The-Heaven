@@ -1,0 +1,23 @@
+プレイヤーobj
+　CGなど
+　PlayerControl.cs
+　　→コントローラクラス
+　　InputAboutPlayerMove.cs
+　　　→移動の入力リスナー（握りつぶしはしない）
+　　InputAboutPlayerAttack.cs
+　　　→攻撃の入力リスナー（握りつぶしはしない）
+　　　ControllWeaponOnHands.cs
+　　　　→武器管理のスクリプト（アイテムも）。名称変更：ControlWeaponAndItemOnHand.cs
+　　　　各武器スクリプト .cs
+　　　　　→武器アクションの再生、攻撃力決定
+　　　　　　アイテム効果発動
+　　InputAboutPlayerCamera.cs
+　　　→カメラの操作の入力リスナー（握りつぶしはしない）
+　　PlayerMove.cs
+　　　→移動の実施
+　　OnGround.cs
+　　　→接地判定
+　　Inventory.cs
+　　　→手持ちアイテムの管理
+　　HpStamina.cs
+　　　HPとスタミナの管理・決定

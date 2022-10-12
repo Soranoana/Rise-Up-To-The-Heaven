@@ -3,46 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
-public struct ItemAndWeaponSet {
-	public int ItemNumber;     //アイテムの番号（検索用など）
-	public string ItemName;    //アイテムの名前
-	public int AttackPoint;    //攻撃力
-	public int UseLimit;       //残り使用回数（999で∞扱い）
-	public string ItemTips;    //アイテムの効果説明（実装するかは未定）
-	public string ItemTypes;      //アイテムの種類
-	/* アイテム番号一覧
-	 * 0 未所持
-	 * 1 死神の鎌
-	 * 2 ちわベロスの槍
-	 * 3 釈迦の後光
-	 * 4 デュラハンの聖剣
-	 * 5 クラーケンの触手
-	 * 6 ドラゴンのバーナー
-	 *
-	 * 以下隠し武器（使うたびに威力減少）
-	 * 7 死神の化身
-	 * 8 ケルベロスのつがい
-	 * 9 釈迦の彫像
-	 * 10 デュラハンの甲冑
-	 * 11 クラーケンの子供
-	 * 12 ドラゴンの雛
-	 *
-	 * 以下アイテム
-	 * 13 薬品        ポーション（少量回復、使用でなくなる）
-	 * 14 強力な薬品  エクスポーション（大）
-	 * 15 彷徨う魂の結晶    復活（回復半分）
-	 * 16 那由多の断末魔   無限完全回復+復活+難易度上昇（即上昇、初期装備）
-	 * 17 夢結晶    一時無敵化スキルポイント（クリア時所持でポイント付与）
-	 * 18 デバッグ用アイテム
-	 */
-	/* アイテムの種類
-	 * 隠し武器
-	 * 武器
-	 * 回復
-	 */
-};
 
-public class playerControll : MonoBehaviour {
+public class playerControl : MonoBehaviour {
 
 	private float walkSpeed = 10;
 	private Vector3 walkVector = Vector3.zero;
@@ -71,7 +33,7 @@ public class playerControll : MonoBehaviour {
 	private int inventoryCapacity;       //インベントリのキャパシティ
 	private int[] inventoryList;
 	//アイテム用
-	public ItemAndWeaponSet[] InventorySet;
+	// public ItemAndWeaponSet[] InventorySet;
 	public string filePath;
 	private StreamReader sr;
 	private int itemKindNum;
@@ -336,20 +298,20 @@ public class playerControll : MonoBehaviour {
 	/* アイテムの一覧をtxtファイルから作成 */
 	private void itemSetOnStart() {
 		sr = new StreamReader(filePath);
-		InventorySet = new ItemAndWeaponSet[itemKindNum];
+		// InventorySet = new ItemAndWeaponSet[itemKindNum];
 		string[] text = sr.ReadLine().Split('\t');
 		//Debug.Log(text[0]);
 		for (int i = 0; i < itemKindNum; i++) {
 			text = sr.ReadLine().Split('\t');
 			//Debug.Log(text[0]);
-			InventorySet[i] = new ItemAndWeaponSet() {
-				ItemNumber = int.Parse(text[0]),
-				ItemName = text[1],
-				AttackPoint = int.Parse(text[2]),
-				UseLimit = int.Parse(text[3]),
-				ItemTips = text[4],
-				ItemTypes = text[5]
-			};
+			// InventorySet[i] = new ItemAndWeaponSet() {
+			// ItemNumber = int.Parse(text[0]),
+			// ItemName = text[1],
+			// AttackPoint = int.Parse(text[2]),
+			// UseLimit = int.Parse(text[3]),
+			// ItemTips = text[4],
+			// ItemTypes = text[5]
+			// };
 		}
 	}
 

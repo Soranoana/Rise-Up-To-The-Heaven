@@ -2695,10 +2695,10 @@ GameObject:
   m_Component:
   - component: {fileID: 900090180}
   - component: {fileID: 900090179}
-  - component: {fileID: 900090178}
   - component: {fileID: 900090177}
   - component: {fileID: 900090175}
   - component: {fileID: 900090176}
+  - component: {fileID: 900090181}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -2742,8 +2742,6 @@ MonoBehaviour:
   - {fileID: 2088407749}
   - {fileID: 468139441}
   - {fileID: 2118188333}
-  rayRange: 1
-  useGrounding: 1
 --- !u!136 &900090177
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2759,44 +2757,6 @@ CapsuleCollider:
   m_Height: 0.84
   m_Direction: 1
   m_Center: {x: 0, y: -0.42, z: -0.09}
---- !u!114 &900090178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114372947411407670, guid: 7e129194d2f16b74b88f16ef174bc16d,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900090174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72265af887d643444bcf8044fb240c9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GravityForce: 0
-  runSpeed: 0
-  texture:
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cc9f333872a11b7489faeccb88e56fed, type: 3}
-  - {fileID: 2800000, guid: 0a94b89591c03e642a554ee8f6e4ef24, type: 3}
-  - {fileID: 2800000, guid: c94ed58a8a8402a43bcc22f20c6e086e, type: 3}
-  - {fileID: 2800000, guid: adce93515eebc7d44b50fcd4accf4559, type: 3}
-  - {fileID: 2800000, guid: 75e8838371963484eae2e78424dba313, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  - {fileID: 2800000, guid: cf243a13f9b9ea541a8d734cea866a90, type: 3}
-  - {fileID: 2800000, guid: b498f0e346f5a50439a4662419d1edf5, type: 3}
-  - {fileID: 2800000, guid: 9ad48a4e1dae75e43a519d4e28503db0, type: 3}
-  - {fileID: 2800000, guid: 8b899c31aa051884d883ab52aabe6c34, type: 3}
-  - {fileID: 2800000, guid: 6a7e2af5aadd15942828cbb75c36a10f, type: 3}
-  - {fileID: 2800000, guid: cd00abd48ba21d342b2cc8c9ce31d978, type: 3}
-  filePath: 
-  useGravity: 1
-  canMoveToUp: 1
-  onGround: {fileID: 900090176}
 --- !u!54 &900090179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2840,6 +2800,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900090181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900090174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72265af887d643444bcf8044fb240c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GravityForce: 1
+  runSpeed: 1
+  texture:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  filePath: 
+  useGravity: 1
+  canMoveToUp: 0
+  onGround: {fileID: 900090176}
 --- !u!1001 &915132100
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,8 +14,7 @@ public class OnGround : MonoBehaviour {
 	[SerializeField]
 	private readonly float rayRange = 1f;
 	//地面接地判定を適用する
-	[SerializeField]
-	public bool UseGrounding { get; private set; }
+	public bool UseGrounding { get; private set; } = true;
 
 	//外部参照可能な変数
 	//反射ベクトル

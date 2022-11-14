@@ -38,6 +38,7 @@ public class OnGround : MonoBehaviour {
 		UpdateGroundStatus();
 	}
 
+	//
 	private void InitializeRayPositionObjs(int objIndex) {
 		string objName;
 		switch (objIndex) {
@@ -73,7 +74,7 @@ public class OnGround : MonoBehaviour {
 		}
 
 		//レイを作成する（発射位置と方向をあらわす情報）
-		Ray[] ray = new Ray[8];
+		Ray[] ray = new Ray[rayPositionObjsNum];
 
 		//レイを飛ばして接地判定を実施。一つでもレイが当たれば接地していることにする
 		for (int i = 0; i < rayPositionObjsNum; i++) {

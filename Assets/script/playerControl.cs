@@ -57,23 +57,6 @@ public class playerControl : MonoBehaviour {
 	private OnGround onGround;
 
 	private void Awake() {
-		/* プラットホーム依存コンパイル */
-#if UNITY_EDITOR
-		filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
-#endif
-#if UNITY_STANDALONE_WIN
-		filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
-#endif
-#if UNITY_ANDROID
-        filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
-#endif
-		/* プラットホーム依存コンパイル ここまで*/
-		itemKindNum = 18;
-		itemSetOnStart();
-
-		inventoryCapacity = itemKindNum;
-		inventoryList = new int[inventoryCapacity];
-
 		rightHand = transform.Find("handRight").gameObject;
 		rightHandScript = rightHand.GetComponent<controllWeaponOnHands>();
 	}
@@ -149,6 +132,7 @@ public class playerControl : MonoBehaviour {
 		PcArrowMove();
 	}
 
+	/* 矢印キー入力による移動 */
 	private void PcArrowMove() {
 		inputed = false;
 		if (( Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) ) && StaminaNow > 0) {
@@ -159,7 +143,7 @@ public class playerControl : MonoBehaviour {
 			isStaminaUse = false;
 			runSpeed = 1;
 		}
-		if (onGround.IsGround) {
+		if (onGround.IsOnGround()) {
 			rigid.velocity = Vector3.zero;
 			if (Input.GetKey(KeyCode.W)) {
 				walkVector = transform.TransformVector(new Vector3(0, 0, 1) * walkSpeed * runSpeed);
@@ -203,8 +187,6 @@ public class playerControl : MonoBehaviour {
 			}
 		}
 
-
-
 		//入力がなければ速度を徐々に減衰
 		if (!inputed) {
 			rigid.velocity = new Vector3(rigid.velocity.x * 0.95f, rigid.velocity.y, rigid.velocity.z * 0.95f);
@@ -215,8 +197,8 @@ public class playerControl : MonoBehaviour {
 		}
 	}
 
+	/* カメラ操作 */
 	private void CameraControll() {
-
 		//カーソル表示
 		if (Input.GetKey(KeyCode.Escape)) {
 			Cursor.visible = !Cursor.visible;
@@ -242,43 +224,42 @@ public class playerControl : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "DropItem") {
+			//落ちてるアイテムに接触したら拾う
 			ItemGet(other, other.gameObject.GetComponent<dropItem>().getItemNum());
 		} else if (other.gameObject.tag == "DamegeArea") {
+			//ダメージエリアに入ったらダメージを受ける
 			HPDamegeManeger(-10);
 			Debug.Log("dm");
 		}
 	}
 
-	private void ItemGet(Collider other, int ItemNumber) {
-		int tmp = getEmptyinventoryNum();
-		tmp = getEmptyinventoryNum();
-		if (tmp < 0)
-			return;//持てません処理未実装
-		else
-			other.gameObject.GetComponent<dropItem>().settingDestroySelf(0);
-		inventoryList[tmp] = ItemNumber;
-	}
-
+	/* HP・スタミナの最大値を各バーに適用。アップデート関数の呼び出し */
 	private void SetHPAndStaminaAndRedEyeOnFirst() {
 		HPbar.GetComponent<Slider>().maxValue = HPMax;
 		StaminaBar.GetComponent<Slider>().maxValue = StaminaMax;
 		SetHPAndStaminaAndRedEyeOnUpdate();
 	}
+
+	/* HP・スタミナの現在値を各バーに適用。アップデート関数の呼び出し */
 	private void SetHPAndStaminaAndRedEyeOnUpdate() {
 		HPbar.GetComponent<Slider>().value = HPNow;
 		StaminaBar.GetComponent<Slider>().value = StaminaNow;
-		RedEye.GetComponent<RawImage>().color = new Color(RedEye.GetComponent<RawImage>().color.r,
-														RedEye.GetComponent<RawImage>().color.g,
-														RedEye.GetComponent<RawImage>().color.b,
-														(float)( HPMax - HPNow ) / HPMax - 0.4f);
+		RedEye.GetComponent<RawImage>().color = new Color(
+			RedEye.GetComponent<RawImage>().color.r,
+			RedEye.GetComponent<RawImage>().color.g,
+			RedEye.GetComponent<RawImage>().color.b,
+			(float)( HPMax - HPNow ) / HPMax - 0.4f
+		);
 	}
 
+	/* HPへのダメージを取りまとめる */
 	public void HPDamegeManeger(int damege) {
 		HPNow += damege;
 		if (HPNow < 0)
 			HPNow = 0;
 	}
 
+	/* スタミナへのダメージを取りまとめる */
 	public void StaminaDamegeManeger(int damege) {
 		StaminaNow += damege;
 		if (StaminaNow < 0)
@@ -293,37 +274,6 @@ public class playerControl : MonoBehaviour {
 		} else {
 			NowWeapon = 0;
 		}
-	}
-
-	/* アイテムの一覧をtxtファイルから作成 */
-	private void itemSetOnStart() {
-		sr = new StreamReader(filePath);
-		// InventorySet = new ItemAndWeaponSet[itemKindNum];
-		string[] text = sr.ReadLine().Split('\t');
-		//Debug.Log(text[0]);
-		for (int i = 0; i < itemKindNum; i++) {
-			text = sr.ReadLine().Split('\t');
-			//Debug.Log(text[0]);
-			// InventorySet[i] = new ItemAndWeaponSet() {
-			// ItemNumber = int.Parse(text[0]),
-			// ItemName = text[1],
-			// AttackPoint = int.Parse(text[2]),
-			// UseLimit = int.Parse(text[3]),
-			// ItemTips = text[4],
-			// ItemTypes = text[5]
-			// };
-		}
-	}
-
-	/* アイテムリストの空き番号を調べる */
-	private int getEmptyinventoryNum() {
-		//中身が0(未所持)ならそれを返す
-		for (int i = 0; i < inventoryCapacity; i++) {
-			if (inventoryList[i] == 0)
-				return i;
-		}
-		//リストに空きがないなら-1を返す
-		return -1;
 	}
 
 	/* 左上のアイテムの欄の表示 */
@@ -351,32 +301,4 @@ public class playerControl : MonoBehaviour {
 		}
 		weapon3Texture.GetComponent<RawImage>().texture = texture[invKey];
 	}
-
-	/* インベントリの中身の途中の空きを削除 */
-	private void inventorySort() {
-		for (int i = 0; i < inventoryCapacity; i++) {
-			if (inventoryList[i] == 0) {
-				bool isListEnd = true;
-				for (int j = i + 1; j < inventoryCapacity; j++) {
-					if (inventoryList[j] != 0) {
-						inventoryList[i] = inventoryList[j];
-						inventoryList[j] = 0;
-						j = inventoryCapacity;
-						isListEnd = false;
-					}
-				}
-				if (isListEnd) {
-					return;
-				}
-			}
-		}
-		return;
-	}
 }
-/*
- * 非VRなら左手消す
-
-
- 
-     
-     */

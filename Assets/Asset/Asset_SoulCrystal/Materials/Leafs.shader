@@ -21,7 +21,7 @@ SubShader {
   Name "FORWARD"
   Tags { "LIGHTMODE"="ForwardBase" "SHADOWSUPPORT"="true" "IGNOREPROJECTOR"="true" "RenderType"="TreeLeaf" }
   ColorMask RGB
-Program "vp" {}
+// Program "vp" {}
 SubProgram "opengl " {
 Keywords { "DIRECTIONAL" "SHADOWS_OFF" "LIGHTMAP_OFF" "DIRLIGHTMAP_OFF" }
 Bind "vertex" Vertex

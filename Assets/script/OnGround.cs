@@ -20,7 +20,7 @@ public class OnGround : MonoBehaviour {
 	//反射ベクトル
 	public Vector3 RayObjectHorizontalVector { get; private set; }
 	//接地判定結果
-	public bool IsGround { get; private set; } = true;
+	private bool IsGround; //{ get; private set; } = true;
 
 	void Start() {
 		//rayPositionObjsがすべてセットされているか確認する
@@ -33,12 +33,12 @@ public class OnGround : MonoBehaviour {
 		}
 	}
 
-	void Update() {
+	public bool IsOnGround() {
 		//ステータス更新
 		UpdateGroundStatus();
+		return IsGround;
 	}
 
-	//
 	private void InitializeRayPositionObjs(int objIndex) {
 		string objName;
 		switch (objIndex) {

@@ -7,58 +7,58 @@ using UnityEngine;
  * ・インベントリ管理
  * ・アイテム使用管理
  */
-public class playerItem : MonoBehaviour{
+public class playerItem : MonoBehaviour {
 
-    void Start(){
-        
-    }
+	private int itemKindNum;
+	private int inventoryCapacity;       //インベントリのキャパシティ
+	private int[] inventoryList;
 
-    void Update(){
-        
-    }
+	void Start() {
+
+	}
+
+	void Update() {
+
+	}
 
 	private void Awake() {
-// 		/* プラットホーム依存コンパイル */
-// #if UNITY_EDITOR
-// 		filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
-// #endif
-// #if UNITY_STANDALONE_WIN
-// 		filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
-// #endif
-// #if UNITY_ANDROID
-//         filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
-// #endif
+		// 		/* プラットホーム依存コンパイル */
+		// #if UNITY_EDITOR
+		// 		filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
+		// #endif
+		// #if UNITY_STANDALONE_WIN
+		// 		filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
+		// #endif
+		// #if UNITY_ANDROID
+		//         filePath = Directory.GetCurrentDirectory() + "/Assets/Resources/itemlist.txt";
+		// #endif
 		/* プラットホーム依存コンパイル ここまで*/
 		itemKindNum = 18;
-		itemSetOnStart();
 
 		inventoryCapacity = itemKindNum;
 		inventoryList = new int[inventoryCapacity];
-
-		rightHand = transform.Find("handRight").gameObject;
-		rightHandScript = rightHand.GetComponent<controllWeaponOnHands>();
 	}
 
-		/* アイテムの一覧をtxtファイルから作成 */
-	private void itemSetOnStart() {
-		sr = new StreamReader(filePath);
-		// InventorySet = new ItemAndWeaponSet[itemKindNum];
-		string[] text = sr.ReadLine().Split('\t');
-		//Debug.Log(text[0]);
-		for (int i = 0; i < itemKindNum; i++) {
-			text = sr.ReadLine().Split('\t');
-			//Debug.Log(text[0]);
-			// InventorySet[i] = new ItemAndWeaponSet() {
-			// ItemNumber = int.Parse(text[0]),
-			// ItemName = text[1],
-			// AttackPoint = int.Parse(text[2]),
-			// UseLimit = int.Parse(text[3]),
-			// ItemTips = text[4],
-			// ItemTypes = text[5]
-			// };
-		}
-	}
-	
+	// /* アイテムの一覧をtxtファイルから作成 */
+	// private void itemSetOnStart() {
+	// 	sr = new StreamReader(filePath);
+	// 	// InventorySet = new ItemAndWeaponSet[itemKindNum];
+	// 	string[] text = sr.ReadLine().Split('\t');
+	// 	//Debug.Log(text[0]);
+	// 	for (int i = 0; i < itemKindNum; i++) {
+	// 		text = sr.ReadLine().Split('\t');
+	// 		//Debug.Log(text[0]);
+	// 		// InventorySet[i] = new ItemAndWeaponSet() {
+	// 		// ItemNumber = int.Parse(text[0]),
+	// 		// ItemName = text[1],
+	// 		// AttackPoint = int.Parse(text[2]),
+	// 		// UseLimit = int.Parse(text[3]),
+	// 		// ItemTips = text[4],
+	// 		// ItemTypes = text[5]
+	// 		// };
+	// 	}
+	// }
+
 	/* インベントリの中身の途中の空きを削除 */
 	private void inventorySort() {
 		for (int i = 0; i < inventoryCapacity; i++) {
@@ -80,7 +80,7 @@ public class playerItem : MonoBehaviour{
 		return;
 	}
 
-		/* アイテムリストの空き番号を調べる */
+	/* アイテムリストの空き番号を調べる */
 	private int getEmptyinventoryNum() {
 		//中身が0(未所持)ならそれを返す
 		for (int i = 0; i < inventoryCapacity; i++) {

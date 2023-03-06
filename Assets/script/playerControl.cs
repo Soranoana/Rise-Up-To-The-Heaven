@@ -36,7 +36,6 @@ public class playerControl : MonoBehaviour {
 	// public ItemAndWeaponSet[] InventorySet;
 	public string filePath;
 	private StreamReader sr;
-	private int itemKindNum;
 	//スタミナ回復量
 	private int staminaRegain = 1;
 	//スタミナを消費している
@@ -225,7 +224,7 @@ public class playerControl : MonoBehaviour {
 	public void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "DropItem") {
 			//落ちてるアイテムに接触したら拾う
-			ItemGet(other, other.gameObject.GetComponent<dropItem>().getItemNum());
+			// ItemGet(other, other.gameObject.GetComponent<dropItem>().getItemNum());
 		} else if (other.gameObject.tag == "DamegeArea") {
 			//ダメージエリアに入ったらダメージを受ける
 			HPDamegeManeger(-10);
@@ -284,8 +283,8 @@ public class playerControl : MonoBehaviour {
 		if (NowWeapon + 1 < inventoryCapacity) {
 			if (inventoryList[NowWeapon + 1] != 0)
 				invKey = inventoryList[NowWeapon + 1];
-			else
-				invKey = NowWeapon + 1 - getEmptyinventoryNum() + 1;
+			// else
+				// invKey = NowWeapon + 1 - getEmptyinventoryNum() + 1;
 		} else {
 			invKey = inventoryList[NowWeapon + 1 - inventoryCapacity];
 		}
@@ -294,8 +293,8 @@ public class playerControl : MonoBehaviour {
 		if (NowWeapon + 2 < inventoryCapacity) {
 			if (inventoryList[NowWeapon + 2] != 0)
 				invKey = inventoryList[NowWeapon + 2];
-			else
-				invKey = NowWeapon + 2 - getEmptyinventoryNum() + 1;
+			// else
+				// invKey = NowWeapon + 2 - getEmptyinventoryNum() + 1;
 		} else {
 			invKey = inventoryList[NowWeapon + 2 - inventoryCapacity];
 		}

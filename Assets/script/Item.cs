@@ -12,21 +12,40 @@ using UnityEngine;
 //projectビューの 右クリック＞Create に本オブジェクトの追加ボタンを配置
 [CreateAssetMenu(fileName = "Item", menuName = "CreateItem")]
 public class Item : ScriptableObject {
-	//アイテムの種類（武器、回復アイテムetc..）
-	public enum Type{
-		UserItem,
-		CraftItem,
-		KeyItem,
-	}
 
+	//アイテムID
+	public int itemId;
+	//アイテム名
+	public String itemName;
+	//分類
+	public enum Type {
+		weapon,
+		item,
+	}
 	public Type type;
-	//アイテムの説明
-	public String information;
+	//レア度
+	public enum Legendaly {
+		common,
+		rare,
+		legend,
+	}
+	public Legendaly legendaly;
+	//3Dモデル
+	public GameObject model;
+	//アタッチスクリプト
+	public MonoBehaviour script;
+	//フレーバーテキスト
+	public String flaverText;
 
 	//コンストラクタ
-	public Item(Item item){
-		this.type=item.type;
-		this.information = item.information;
+	public Item(Item item) {
+		this.itemId = item.itemId;
+		this.itemName = item.itemName;
+		this.type = item.type;
+		this.legendaly = item.legendaly;
+		this.model = item.model;
+		this.script = item.script;
+		this.flaverText = item.flaverText;
 	}
 
 }

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773c6783fbd7444f491187274dd8ad71, type: 3}
+  m_Name: KrakenChild
+  m_EditorClassIdentifier: 
+  itemId: 10
+  itemName: KrakenChild
+  type: 0
+  legendaly: 1
+  model: {fileID: 0}
+  script: {fileID: 0}
+  flaverText: "\u7206\u767A\u3059\u308B\u5B50\u4F9B\u306E\u30A4\u30AB\u3092\u53EC\u559A\u3059\u308B\u3002\u3053\u308C\u3089\u306F\u81EA\u52D5\u3067\u6575\u306B\u7A81\u6483\u3059\u308B\u3002"

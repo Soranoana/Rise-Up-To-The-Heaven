@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773c6783fbd7444f491187274dd8ad71, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  itemId: 3
+  itemName: Sword
+  type: 0
+  legendaly: 0
+  model: {fileID: 0}
+  script: {fileID: 0}
+  flaverText: "\u30C7\u30E5\u30E9\u30CF\u30F3\u306E\u5263\u3002"

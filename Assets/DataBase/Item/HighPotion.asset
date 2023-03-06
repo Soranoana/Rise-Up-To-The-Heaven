@@ -10,7 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 773c6783fbd7444f491187274dd8ad71, type: 3}
-  m_Name: KeyItem
+  m_Name: HighPotion
   m_EditorClassIdentifier: 
-  type: 0
-  information: 
+  itemId: 13
+  itemName: HighPotion
+  type: 1
+  legendaly: 1
+  model: {fileID: 0}
+  script: {fileID: 0}
+  flaverText: "\u30CF\u30A4\u30DD\u30FC\u30B7\u30E7\u30F3\u3002"

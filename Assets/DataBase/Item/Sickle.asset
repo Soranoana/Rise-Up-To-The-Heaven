@@ -10,7 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 773c6783fbd7444f491187274dd8ad71, type: 3}
-  m_Name: CraftItem
+  m_Name: Sickle
   m_EditorClassIdentifier: 
+  itemId: 0
+  itemName: Sickle
   type: 0
-  information: 
+  legendaly: 0
+  model: {fileID: 0}
+  script: {fileID: 0}
+  flaverText: "\u521D\u671F\u88C5\u5099\u3002\u5730\u7344\u306E\u938C\u3002"
